@@ -48,7 +48,7 @@ Typ "Ja" of "Nee" voor uw gewenste keuze: ''')
         jouw_keuze = jouw_keuze.lower()
         
         f = open("inputlog.txt", "a")
-        f.write("input van gebruiker: " + jouw_keuze + " " + str(datetime.datetime.now()) + " ingestuurd door: " + gebruiker + " klas: " + klas + "\n")
+        f.write("input van gebruiker: " + jouw_keuze + " " + str(datetime.datetime.now()) + " ingestuurd door: " + gebruiker + " | klas: " + klas + "\n")
         f.close()
         if jouw_keuze in database:
             print()
